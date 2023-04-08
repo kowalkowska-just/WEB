@@ -24,3 +24,13 @@ p {
 span {
     background-color: tomato;
 }
+
+ul {
+    list-style-position: inside;
+    padding-inline-start: 100px;
+}
+
+ol {
+    list-style-position: inside;
+    padding-inline-start: 100px;
+}
