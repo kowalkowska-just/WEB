@@ -37,8 +37,8 @@ ol {
     font-size: 36px;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: #045de9;
-    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    background-color: #333;
+    color: #fff;
    }
    
    table {
