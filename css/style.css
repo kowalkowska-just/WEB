@@ -18,5 +18,12 @@ p {
     margin-top: 20px;
     padding: 20px 10px;
     font-size: 48px;
-    background-color: lime;
+}
+
+div, p, span {
+    font-size: 60px;
+}
+/* span in p and div  */
+div p span {
+    background-color: gold;
 }
