@@ -22,8 +22,9 @@ p {
 
 div, p, span {
     font-size: 60px;
+    background-color: lime !important;
 }
 /* span in p and div  */
 div p span {
-    background-color: gold;
+    background-color: red;
 }
