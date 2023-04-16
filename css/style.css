@@ -1,29 +1,38 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    padding: 40px;
-    background-color: royalblue;
-    font-family: sans-serif;   
-}
-
-h1 {
-    font-size: 54px;
-    /*text-transform: uppercase; */
+    margin: 20px;
+    font-size: 36;
+    height: 100vh;
+    background-color: #333; 
+    color: white;
 }
 
 p {
-    margin-top: 20px;
-    padding: 20px 10px;
-    font-size: 48px;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-style: italic;
+    font-weight: bold; 
 }
 
-span {
-    font-size: 50px;
+p.bold-text {
+    font-weight: bold;
 }
-/* span in p and div  */
-div p span {
-    background-color: red;
+
+
+
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
 }
