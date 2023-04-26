@@ -5,15 +5,37 @@ body {
     font-size: 36px;
 }
 
-.box {
-    width: 50%;
-    height: 600px;
-    background-color: lime;
+html {
+    font-size: 10px;
 }
 
-.inside {
-    width: 50%;
-    height: 300px;
-    background-color: royalblue;
+.top,
+.bottom {
+    margin-top: 30px;
+    padding: 20px 50px;
 }
 
+.top {
+    font-size: 40px;
+    background-color: #000;
+}
+
+.one {
+    font-size: 1em;
+}
+
+.two {
+    font-size: 2em;
+}
+
+.bottom {
+    font-size: 30px;
+}
+
+.first {
+    font-size: ;
+}
+
+.second {
+    font-size: ;
+}
