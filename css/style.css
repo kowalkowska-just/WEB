@@ -4,36 +4,3 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size: 36px;
 }
-
-.box-1 { 
-    background-color: gold;
-    width: 400px;
-    height: 400px;
-}
-
-.circle {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: rgb(255, 0, 0, 0.3);
-}
-
-.box-2 {
-    background-color: greenyellow;
-    max-width: 800px;
-    min-width: 500px;
-    width: 100%;
-    height: 200px;
-}
-
-.box-3 {
-    width: 50vw;
-    height: 300px;
-    background-color: tomato;
-}
-
-.inside {
-    width: 50%;
-    height: 50vw;
-    background-color: aquamarine;
-}

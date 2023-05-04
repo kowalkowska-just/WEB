@@ -12,16 +12,41 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+	<style>
 
-	<div class="box-1">
-		<div class="circle"></div>
-	</div>
+		/* css specificity */
+		/* 0 - inline - 1000pkt */
+		/* 1 - id - 100pkt */
+		/* 2 - class - 10pkt */
+		/* html tag - 1pkt  */
 
-	<div class="box-2"></div>
 
-	<div class="box-3">
-		<div class="inside"></div>
-	</div>
+		/* #test {
+			background-color: tomato;
+		}
+
+		.square {
+			background-color: lime;
+		} */
+
+		/* 1pkt */
+		div {
+			width: 600px;
+			height: 600px;
+			background-color: gold;
+		}
+		/* 2pkt more important */
+		section div {
+			background-color: pink;
+		}
+
+		/* "important" is the most important in css */
+
+	</style>
+
+	<section>
+		<div class="square" id="test"></div>
+	</section>
 
 </body>
 </html> 
