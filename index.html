@@ -5,48 +5,47 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Task1</title>
+
 	<link rel="stylesheet" href="css/style.css">
+
 	<script src="https://kit.fontawesome.com/8b47467cf6.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-	<style>
+	<h3>Cascading and inheritance</h3>
 
-		/* css specificity */
-		/* 0 - inline - 1000pkt */
-		/* 1 - id - 100pkt */
-		/* 2 - class - 10pkt */
-		/* html tag - 1pkt  */
+		<!-- parents - child -->
+		<div>
+			<p></p>
+		</div>
 
+		<!-- siblings -->
+		<div></div>
+		<div></div>
+		<div></div>
 
-		/* #test {
-			background-color: tomato;
-		}
+		<!-- happy family -->
+		<main>
+			<section>
+				<div>
+					<p></p>
+				</div>
+			</section>
+		</main>
 
-		.square {
-			background-color: lime;
-		} */
+		<div class="parent">
+			<p>Paragraf w PARENT</p>
+			<span>Span w PARENT</span>
+		</div>
 
-		/* 1pkt */
-		div {
-			width: 600px;
-			height: 600px;
-			background-color: gold;
-		}
-		/* 2pkt more important */
-		section div {
-			background-color: pink;
-		}
+		<div>
+			<p>Paragrph in DIV without class</p>
+			<span>Span in DIV without class</span>
+		</div>
 
-		/* "important" is the most important in css */
+		<p>Paragraf outside DIV</p>
 
-	</style>
-
-	<section>
-		<div class="square" id="test"></div>
-	</section>
-
-</body>
+	</body>
 </html> 

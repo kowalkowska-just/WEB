@@ -4,3 +4,29 @@ body {
     font-family: 'Comfortaa', cursive;
     font-size: 36px;
 }
+
+h3 {
+    padding: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+p, span {
+    padding: 30px 50px;
+}
+
+.parent {
+    color: cornsilk;
+}
+
+p {
+    color: royalblue;
+}
+
+div p {
+    color: lime;
+}
