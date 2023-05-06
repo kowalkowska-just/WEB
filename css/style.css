@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }
@@ -9,22 +9,23 @@ body {
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-size: 36px;
-    margin: 50px;
+    
 }
 
-div p {
-    color: tomato;
+.square {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 10px solid black;
+    margin: 20px;
 }
 
-div.child > p {
-    font-weight: bold;
-    text-decoration: line-through;
-}
-
-#test ~ div {
+.content {
     background-color: royalblue;
+    box-sizing: content-box;
 }
 
-main + p {
-    text-transform: uppercase;
+.border {
+    background-color: lime;
+    box-sizing: border-box;
 }
