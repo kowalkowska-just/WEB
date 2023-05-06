@@ -5,6 +5,7 @@
 }
 
 body {
+    margin: 50px;
     background-color: #333;
     color: #fff;
     font-family: 'Comfortaa', cursive;
@@ -13,35 +14,14 @@ body {
 }
 
 .square {
-    display: inline-block;
     width: 300px;
     height: 300px;
-    border: 10px solid black;
-    margin: 30px;
+    background-color: rosybrown;
 
-
-    /* T R B L */
-    padding: 20px;
-
-    /* TB - RL */
-    padding: 20px 30px;
-
-    /* T - RL - B */
-    padding: 20px 30px 40px;
-
-    /* T - R - B - L */
-    padding: 20px 30px 40px 50px;
-
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    padding-left: 50px;
-}
-
-.content {
-    background-color: royalblue;
-}
-
-.border {
-    background-color: lime;
+    overflow: visible;
+    overflow: hidden;
+    overflow: auto;
+    
+    /* Scroll always shows scrollbars. */
+    overflow: scroll; 
 }
