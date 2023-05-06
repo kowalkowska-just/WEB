@@ -13,25 +13,17 @@ body {
     
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.btn {
+    padding: 10px 20px;
+    background-color: tomato;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 500ms;
 }
 
-/* Pseudoclass */
-
-a:link {
-    color: lime;
-}
-
-a:visited {
-    color: tomato;
-}
-
-a:hover {
-    color: royalblue;
-}
-
-a:active {
+.btn:hover {
     background-color: gold;
+    box-shadow: 0 0 5px gold;
+    
 }
