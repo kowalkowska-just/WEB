@@ -9,39 +9,22 @@ body {
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-size: 36px;
+    margin: 50px;
 }
 
-hr {
-    margin: 30px 0;
+div p {
+    color: tomato;
 }
 
-
-
-/* direct children  (>)  */
-/* 
-     <div>
-          <p></p>
-     </div>
-*/
-div > p {
-    color: lime;
+div.child > p {
+    font-weight: bold;
+    text-decoration: line-through;
 }
 
-section p { 
-    color: red;
+#test ~ div {
+    background-color: royalblue;
 }
 
-/* Combinations only work downwards */
-/* direct first brother   (+)  */
-/* only first brother, second will be not working */
-/*   <div></div>
-     <p></p>
-*/
-div + p {
-    color: blue;
-}
-
-/* direct all brothers */
-div ~ p {
-    color: pink
+main + p {
+    text-transform: uppercase;
 }
