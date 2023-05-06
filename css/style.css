@@ -13,17 +13,34 @@ body {
     
 }
 
-.btn {
-    padding: 10px 20px;
-    background-color: tomato;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 500ms;
+div {
+    display: block;  /* default value */
+
+    background-color: lime;
+    color: black;
 }
 
-.btn:hover {
+p {
+    display: block; /* default value */
+    display: inline; /* change display */
+    display: inline-block; /* both values simultaneously */
+
+    width: 300px;
+    height: 50px;
+
     background-color: gold;
-    box-shadow: 0 0 5px gold;
-    
+    margin: 30px 0;
+    color: black;
+}
+
+span {
+    display: inline; /* default value */
+    display: block;
+
+    height: 300px;
+    background-color: royalblue;
+}
+
+img {
+    height: 200px;
 }
