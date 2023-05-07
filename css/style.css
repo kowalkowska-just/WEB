@@ -30,16 +30,25 @@ div {
 }
 
 .blue {
-    position: relative;
-    top: 100px;
-    left: 50px;
-
-    z-index: -1;
-
     margin: 20px auto;
     background-color: royalblue;
+
+    /* position: relative;  - warstwa wizualna, struktura strony zostaje taka sama */ 
+    /* position: absolute; - warstwa wizualna, ale zmienia tez strukturę strony
+                            i pozycjonuje się względem okna przeglądarki, chyba ze rodzić ma inne position.
+    bottom: 0;
+    right: 0; */
 }
 
 .green {
     background-color: greenyellow;
+}
+
+.gold {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    background-color: gold;
 }
