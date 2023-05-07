@@ -13,34 +13,33 @@ body {
     
 }
 
+main {
+    margin-top: 200px;
+}
+
 div {
-    display: block;  /* default value */
-
-    background-color: lime;
-    color: black;
+    margin: 0 auto;
+    height: 200px;
+    width: 600px;
+    border: 3px solid black;
 }
 
-p {
-    display: block; /* default value */
-    display: inline; /* change display */
-    display: inline-block; /* both values simultaneously */
-
-    width: 300px;
-    height: 50px;
-
-    background-color: gold;
-    margin: 30px 0;
-    color: black;
+.red {
+    margin-top: 200px;
+    background-color: tomato;
 }
 
-span {
-    display: inline; /* default value */
-    display: block;
+.blue {
+    position: relative;
+    top: 100px;
+    left: 50px;
 
-    height: 300px;
+    z-index: -1;
+
+    margin: 20px auto;
     background-color: royalblue;
 }
 
-img {
-    height: 200px;
+.green {
+    background-color: greenyellow;
 }
