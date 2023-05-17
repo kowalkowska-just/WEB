@@ -26,40 +26,40 @@ div {
     width: 100px;
     border: 3px solid black;
 }
- 
+
+.top {
+    position: absolute;
+    top: 0;
+}
+
 .red {
     background-color: tomato;
-    position: absolute;
     left: 0;
-    top: 0;
 }
  
 .blue {
     background-color: royalblue;
-    position: absolute;
     left: 100px;
-    top: 0;
 }
  
 .green {
     background-color: greenyellow;
-    position: absolute;
     left: 200px;
-    top: 0;
 }
- 
-.gold {
-    background-color: gold;
+
+.right {
     position: absolute;
     right: 0;
+}
+
+.gold {
+    background-color: gold;
     bottom: 0;
 }
  
 .silver {
     background-color: silver;
-    position: absolute;
     bottom: 100px;
-    right: 0;
 }
  
 .black {
