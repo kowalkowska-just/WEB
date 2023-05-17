@@ -26,16 +26,25 @@ div {
 }
 
 .red {
+    margin-top: 400px;
     background-color: tomato;
 }
  
 .blue {
     background-color: royalblue;
     margin: 20px auto;
-    position: fixed;
-    top: 0;
 }
  
 .green {
     background-color: greenyellow;
+}
+
+.gold {
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    position: sticky;
+    top: 0;
+
+    /* the sticky position works within the parent */
 }
