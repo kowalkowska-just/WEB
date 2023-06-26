@@ -5,66 +5,87 @@
 }
  
 body {
-    position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
     font-size: 36px;
     color: #fff;
 }
- 
-.bg {
+
+.btn {
+    width: 120px;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ddd;
-    transition: 0.3s;
-}
- 
-.square {
-    /* display: inline-block; */
-    position: absolute;
-    top: 40px;
-    width: 60px;
-    height: 60px;
-    border: 3px solid black;
-    cursor: pointer;
+    top: 50px;
     transform: translateX(-50%);
+    background: none;
+    padding: 10px 30px;
+    border-radius: 5px solid white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
 }
+
+.square {
+    position: absolute;
+    top: 150px;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
+    transition: .3s;
+    border-radius: 25px;
+    border-color: hwb(0 0% 100% / 0.200);
+    border-style: solid;
+    border-width: 2px;
+    transition: .3s;
+}
+
 .blue {
     background-color: royalblue;
-    left: 18%;
-} 
-
-.green {
-    background-color: greenyellow;
-    left: 38%;
+    left: 30%;
+    box-shadow: 0 0 20px royalblue;
 }
 
 .red {
     background-color: tomato;
-    left: 58%;  
+    left: 50%;
+    box-shadow: 0 0 20px tomato;
+}
+.green {
+    background-color: lime;
+    left: 70%;
+    box-shadow: 0 0 20px lime;
+}
+
+:hover.btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-zoom:hover ~ .square {
+    width: 200px;
+    height: 200px;
+}
+
+.btn-move:hover ~ .square {
+    top: 400px;
+}
+
+.btn-color:hover ~ .square {
+    background-color: black;
+    border: white;
+    box-shadow: 0 0 15px black;
+}
+
+.btn-zoom {
+    left: 30%;
 }
  
-.gold {
-    background-color: gold;
-    left: 78%;
+.btn-move {
+    left: 50%;
+}
+.btn-color {
+    left: 70%;
 }
 
-div.blue:hover ~ .bg {
-    background-color: royalblue;
-}
-
-div.green:hover ~ .bg {
-    background-color: greenyellow;
-}
-
-div.red:hover ~ .bg {
-    background-color: tomato;
-}
-
-div.gold:hover ~ .bg {
-    background-color: gold;
-}
