@@ -5,6 +5,11 @@
 }
  
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
     font-size: 36px;
@@ -12,55 +17,50 @@ body {
 }
 
 .square {
-    position: absolute;
-    left: 50%;
     width: 200px;
     height: 200px;
-    transform: translateX(-50%);
-    border-radius: 25px;
-    border-color: hwb(0 0% 100% / 0.200);
     background-color: burlywood;
-    border-style: solid;
-    border-width: 2px;
-    transition: .3s;
+    border: 2px solid yellow;
+    border-radius: 25px;
     box-shadow: 0 0 15px burlywood;
-
-    /* transition-property: all;
-    transition-duration: 0s;
-    transition-timing-function: ease;
-    transition-delay: 0s; */
 
     transition: all 0.5s ease 0s;
 }
 
-.square:hover {
-    background-color: darkgoldenrod;
-    box-shadow: 0 0 15px darkgoldenrod;
+.translate {
+
+    /* centering the item */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
-.one {
-    top: 15%;
-    transition: width 0.3s, height 1s;
-}
- 
-.two {
-    top: 40%;
-    transition: width 1s 1s;
-}
-.three {
-    top: 65%;
-    transition: width 1s 2s;
+.scale:hover {
+    transform: scale(.5);
 }
 
-.one:hover {
-    width: 250px;
-    height: 250px;
+.translate:hover {
+    transform: translateY(50px);
 }
 
-.one:hover ~ .two {
-    width: 250px;
+.rotate:hover {
+    transform: rotate(45deg);
 }
 
-.one:hover ~ .three {
-    width: 250px;
+.skew:hover {
+    transform: skew(20deg);
+}
+
+.rotate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    border-top: 10px solid tomato;
+    border-bottom: 10px solid tomato;
+    border-left: 15px solid lime;
+    border-right: 15px solid lime;
+    transition: 2s;
 }
