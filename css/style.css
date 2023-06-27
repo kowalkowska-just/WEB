@@ -11,81 +11,56 @@ body {
     color: #fff;
 }
 
-.btn {
-    width: 120px;
-    position: absolute;
-    top: 50px;
-    transform: translateX(-50%);
-    background: none;
-    padding: 10px 30px;
-    border-radius: 5px solid white;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    transition: .3s;
-}
-
 .square {
     position: absolute;
-    top: 150px;
-    width: 100px;
-    height: 100px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
     transform: translateX(-50%);
-    transition: .3s;
     border-radius: 25px;
     border-color: hwb(0 0% 100% / 0.200);
+    background-color: burlywood;
     border-style: solid;
     border-width: 2px;
     transition: .3s;
+    box-shadow: 0 0 15px burlywood;
+
+    /* transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    transition: all 0.5s ease 0s;
 }
 
-.blue {
-    background-color: royalblue;
-    left: 30%;
-    box-shadow: 0 0 20px royalblue;
+.square:hover {
+    background-color: darkgoldenrod;
+    box-shadow: 0 0 15px darkgoldenrod;
 }
 
-.red {
-    background-color: tomato;
-    left: 50%;
-    box-shadow: 0 0 20px tomato;
-}
-.green {
-    background-color: lime;
-    left: 70%;
-    box-shadow: 0 0 20px lime;
-}
-
-:hover.btn {
-    background-color: #fff;
-    color: #000;
-}
-
-.btn-zoom:hover ~ .square {
-    width: 200px;
-    height: 200px;
-}
-
-.btn-move:hover ~ .square {
-    top: 400px;
-}
-
-.btn-color:hover ~ .square {
-    background-color: black;
-    border: white;
-    box-shadow: 0 0 15px black;
-}
-
-.btn-zoom {
-    left: 30%;
+.one {
+    top: 15%;
+    transition: width 0.3s, height 1s;
 }
  
-.btn-move {
-    left: 50%;
+.two {
+    top: 40%;
+    transition: width 1s 1s;
 }
-.btn-color {
-    left: 70%;
+.three {
+    top: 65%;
+    transition: width 1s 2s;
 }
 
+.one:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.one:hover ~ .two {
+    width: 250px;
+}
+
+.one:hover ~ .three {
+    width: 250px;
+}
