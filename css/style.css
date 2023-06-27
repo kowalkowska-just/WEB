@@ -5,11 +5,6 @@
 }
  
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
     font-size: 36px;
@@ -17,34 +12,11 @@ body {
 }
 
 .square {
-    width: 200px;
-    height: 200px;
-    border: 3px solid #fff;
-    border-radius: 25px;
-}
-
-.square2{
     position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
     width: 200px;
     height: 200px;
     border-radius: 25px;
     background-color: royalblue;
-    transition: 0.3s;
-
-    transform-origin: 10% 90% ;
-}
-
-.square2:hover {
-    transform: rotate(45deg);
-}
-
-.dot {
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #000;
 }
