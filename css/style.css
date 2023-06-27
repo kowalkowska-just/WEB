@@ -19,48 +19,32 @@ body {
 .square {
     width: 200px;
     height: 200px;
-    background-color: burlywood;
-    border: 2px solid yellow;
+    border: 3px solid #fff;
     border-radius: 25px;
-    box-shadow: 0 0 15px burlywood;
-
-    transition: all 0.5s ease 0s;
 }
 
-.translate {
+.square2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: royalblue;
+    transition: 0.3s;
 
-    /* centering the item */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    transform-origin: 10% 90% ;
 }
 
-.scale:hover {
-    transform: scale(.5);
-}
-
-.translate:hover {
-    transform: translateY(50px);
-}
-
-.rotate:hover {
+.square2:hover {
     transform: rotate(45deg);
 }
 
-.skew:hover {
-    transform: skew(20deg);
-}
-
-.rotate {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-
-    border-top: 10px solid tomato;
-    border-bottom: 10px solid tomato;
-    border-left: 15px solid lime;
-    border-right: 15px solid lime;
-    transition: 2s;
+.dot {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
 }
