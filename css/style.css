@@ -7,86 +7,27 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #333;
+    height: 100vh;;
 }
 
-div {
-    border: 2px solid black;
-    text-align: center;
-    line-height: 60px;
+.square {
+    width: 50%;
+    height: 50%;
+    margin: 300px auto;
+    background-color: rosybrown;
+    border: 3px solid black;
 }
 
-.long {
-    position: absolute;
-    background-color: tomato;
-    width: 800px;
-    height: 60px;
-    top: 50px;
-    left: calc(50% - 400px);
-    transition: .5s;
+@media (orientation: landscape) {
+    .square {
+        background-color: rebeccapurple;
+
+    }
 }
 
-.long:hover {
-    transform: scale(1.5);
-    width: 400px;
-    left: calc(50% - 200px);
-    background-color: yellow;
+@media (min-max: 500px) and (max-width: 600px) {
+    .square {
+        background-color: rebeccapurple;
 
-}
-
-.short {
-    position: absolute;
-    background-color: royalblue;
-    width: 300px;
-    height: 60px;
-    top: 180px;
-    left: calc(50% - 150px);
-    border-radius: 25px;
-    transition: transform 1s linear 0s;
-}
-
-.short:hover {
-    transform: rotate(360deg);
-}
-
-.short:hover ~ .short2 {
-    transform: rotate(360deg);
-}
-
-.short:hover ~ .short3 {
-    transform: rotate(-360deg);
-}
-
-.short2-3 {
-    position: absolute;
-    width: 300px;
-    height: 60px;
-    top: 300px;
-    border-radius: 10px;
-}
-
-.short2 {
-    background-color: yellow;
-    left: calc(33% - 150px);
-    transition: transform 1s ease-out 1s;
-}
-
-.short3 {
-    background-color: green;
-    left: calc(66% - 150px);
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-}
-
-.center {
-    position: absolute;
-    height: 200px;
-    width: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 1s;
-    line-height: 200px;
-}
-
-.center:hover {
-    background-color: white;
+    }
 }
