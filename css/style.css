@@ -96,3 +96,62 @@ footer {
 .icon-box a:hover {
     color: grey;
 }
+
+/* main */
+main {
+    margin: 50px auto;
+    width: 1200px;
+}
+
+main h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-us-box {
+    position: relative;
+    margin: 40px 0;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+}
+
+.top {
+    background-image: url(../img/kawa.jpg);
+}
+
+.middle {
+    background-image: url(../img/kreatywnosc.jpg);
+}
+
+.bottom {
+    background-image: url(../img/praca.jpg);
+}
+
+.about-us-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    padding: 20px 20px;
+    text-align: center;
+    color: #fff;
+
+    transform: translate(-50%);
+}
+
+.about-us-text h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-us-bg {
+    position: absolute;
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+}
