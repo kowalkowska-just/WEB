@@ -1,0 +1,43 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.long {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    height: 600px;
+    width: 150px;
+    padding: 10px;
+    background-color: tomato;
+    transition: height 1s;
+    overflow: hidden;
+}
+
+.long:hover {
+    height: 200px;
+}
+
+.big {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    height: 600px;
+    width: 800px;
+    background-color: royalblue;
+}
+
+.child {
+    border: 3px solid black;
+    height: 200px;
+    transition: background 1s;
+}
+
+.first + .child {
+    background-color: greenyellow;
+}
+.first:hover ~ .child {
+    background-color: gold;
+}
