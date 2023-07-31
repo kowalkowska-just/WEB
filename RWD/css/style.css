@@ -4,8 +4,12 @@
     padding: 0;
 }
 
-body {
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .wrapper {
@@ -46,12 +50,19 @@ body {
     text-align: center;
 }
 
+section {
+    scroll-margin-top: 60px;
+}
+
 /* NAVIGATION */
 nav {
+    position: sticky;
+    top: 0;
     height: 60px;
     line-height: 60px;
     background-color: #ddd;
     text-align: center;
+    z-index: 10;
 }
 
 .burger-icon {
@@ -107,6 +118,11 @@ main {
 
 .product h3 {
     text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+.product:hover h3{
+    transform: scale(1.5);
 }
 
 .first-product {
