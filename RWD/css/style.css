@@ -125,6 +125,25 @@ main {
     background-image: url('../img/nature-small.jpg');
 }
 
+/* CONTACTS */
+
+.contact {
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 20px 0 5px;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px 10px;
+
+}
+
 @media (min-width: 768px) {
     .burger-icon {
         display: none;
