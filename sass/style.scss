@@ -1,23 +1,17 @@
-@import './colors';
+@use './reset' as *;
+@use './colors' as *;
 
-@mixin addons {
-    border-radius: 25px;
-    background-color: gold;
+@mixin circle {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
 }
 
-@mixin color($bg-color) {
-    background-color: $bg-color;
-}
-
-@mixin size($size) {
-    height: $size;
-    width: $size;
-}
-
-* { 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 10px;
 }
 
 body { 
@@ -25,13 +19,38 @@ body {
     font-family: sans-serif;
 }
 
-.square {
-    margin: 50px;
-    border: 5px solid black;
-    @include size(200px);
-    @include addons;
+h1 {
+    font-size: 3rem;
+    color: $header;
 }
 
-.success {
-    @include color($red)
+h2 {
+    font-size: 2.4rem;
+    color: $header;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: $header;
+}
+
+p {
+    font-size: 16px;
+}
+
+section {
+    height: 25vh;
+    text-align: center;
+}
+
+.even {
+    background-color: $even;
+}
+
+.odd {
+    background-color: $odd;
+}
+
+.circle {
+    @include circle;
 }
