@@ -1,33 +1,35 @@
-$colors: (
-    left: lime,
-    middle: gold,
-    right: tomato
-);
+@mixin addons {
+    border-radius: 25px;
+    background-color: gold;
+}
+
+@mixin color($bg-color) {
+    background-color: $bg-color;
+}
+
+@mixin size($size) {
+    height: $size;
+    width: $size;
+}
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: #333;
     font-family: sans-serif;
 }
 
 .square {
     margin: 50px;
-    width: 200px;
-    height: 200px;
     border: 5px solid black;
+    @include size(200px);
+    @include addons;
 }
 
-.item1 {
-    background-color: map-get($colors, left);
-}
-
-.item2 {
-    background-color: map-get($map: $colors, $key: middle);
-}
-
-.item3 {
-    background-color: map-get($map: $colors, $key: right)
+.success {
+    @include color(tomato)
 }
