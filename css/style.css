@@ -3,18 +3,25 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: royalblue;
+  background-color: #333;
   font-family: sans-serif;
 }
 
-.test p {
-  color: #000;
-}
-.test span {
-  color: #000;
+.square {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
 }
 
-p {
-  font-size: 72px;
-  text-transform: uppercase;
+.item1 {
+  background-color: lime;
+}
+
+.item2 {
+  background-color: gold;
+}
+
+.item3 {
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */
