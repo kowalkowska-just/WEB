@@ -1,17 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: royalblue;
+    font-family: sans-serif;
+}
 
-nav {
-    ul {
-        list-style: none;
-
-        li {
-            a {
-                text-align: center;
-            }
-        }
+.test {
+    p {
+        color: #000;
     }
 
-    li {
-        background-color: red;
-        font-size: 31px;
+    span {
+        color: #000;
     }
+}
+
+p {
+    font-size: 72px;;
+    text-transform: uppercase;
 }

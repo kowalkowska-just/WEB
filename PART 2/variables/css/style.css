@@ -1,0 +1,29 @@
+:root {
+    --main-color: lime;
+}
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+.box {
+    margin: 20px auto;
+    width: 50%;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.color1 {
+    background-color: var(--main-color);
+}
+
+.color2 {
+    background-color: yellow;
+}
