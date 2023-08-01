@@ -29,10 +29,6 @@ td {
   height: 100px;
 }
 
-tr:nth-child(2n+1) {
-  background-color: gold;
-}
-
-tr:nth-child(2n) {
-  background-color: yellow;
+tr:nth-of-type(4) {
+  background-color: lightcoral;
 }/*# sourceMappingURL=style.css.map */
