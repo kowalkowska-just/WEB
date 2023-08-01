@@ -1,56 +1,33 @@
-@use './reset' as *;
-@use './colors' as *;
-
-@mixin circle {
-    width: 100px;
-    height: 100px;
-    margin: 30px auto;
-    background-color: lime;
-    border: 3px solid black;
-    border-radius: 50%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html {
-    font-size: 10px;
-}
-
-body { 
+body {
+    margin: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
     background-color: #333;
-    font-family: sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-    color: $header;
+div {
+    margin: 50px;
 }
 
-h2 {
-    font-size: 2.4rem;
-    color: $header;
+p:first-child {
+    color: lime;
 }
 
-h3 {
-    font-size: 1.8rem;
-    color: $header;
+p:last-child {
+    color: gold;
 }
 
-p {
-    font-size: 16px;
+div:last-of-type {
+    color: purple;
 }
 
-section {
-    height: 25vh;
-    text-align: center;
-}
-
-.even {
-    background-color: $even;
-}
-
-.odd {
-    background-color: $odd;
-}
-
-.circle {
-    @include circle;
+div:first-of-type {
+    color: red;
 }
