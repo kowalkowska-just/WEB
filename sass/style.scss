@@ -1,3 +1,5 @@
+@import './colors';
+
 @mixin addons {
     border-radius: 25px;
     background-color: gold;
@@ -31,5 +33,5 @@ body {
 }
 
 .success {
-    @include color(tomato)
+    @include color($red)
 }
