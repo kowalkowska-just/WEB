@@ -1,0 +1,10 @@
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  text-align: center;
+}
+nav li {
+  background-color: red;
+  font-size: 31px;
+}/*# sourceMappingURL=style.css.map */
