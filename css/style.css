@@ -12,35 +12,28 @@ body {
   background-color: #333;
 }
 
-p {
-  margin: 100px;
-  text-align: center;
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
 }
 
-p::before {
-  content: "Hello ";
-  color: lime;
+[href="google.pl"] {
+  color: gold;
 }
 
-p::after {
-  content: "!";
-  color: lime;
+p[class*=test] {
+  color: pink;
 }
 
-.hero-img {
-  position: relative;
-  margin: 100px auto;
-  width: 400px;
-  height: 500px;
-  background-image: url("https://cdn.pixabay.com/photo/2023/04/06/16/24/coyote-7904672_1280.jpg");
-  background-size: cover;
-  background-position: center;
+p[class=test] {
+  color: blue;
 }
 
-.hero-img::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+p[class|=test] {
+  color: blue;
+}
+
+p[class$=test] {
+  background: yellow;
 }/*# sourceMappingURL=style.css.map */
