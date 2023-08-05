@@ -11,42 +11,55 @@ body {
   background-color: #333;
 }
 
-div {
-  height: 300px;
-  width: 300px;
+.colors {
+  height: 80vh;
+  background-image: linear-gradient(tomato, gold, royalblue, lime, royalblue, gold, tomato);
+  background-size: 800%;
+  animation: colors 3s linear infinite;
+}
+
+@keyframes colors {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+.wrapper {
+  margin: 50px;
+  text-align: center;
+  line-height: 10px;
 }
 
 .square {
-  background-color: tomato;
-  animation: square 4s forwards;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 2px;
+  animation: fade 1.4s infinite;
 }
 
-.circle {
-  background-color: limegreen;
-  border-radius: 50%;
-  animation: circle 2s 4s;
+.square:nth-child(2n) {
+  animation: fade 1s infinite;
 }
 
-@keyframes square {
-  0% {
-    height: 300px;
-    width: 300px;
+.square:nth-child(3n) {
+  animation: fade 0.5s infinite;
+}
+
+@keyframes fade {
+  10% {
+    opacity: 1;
+    background-color: pink;
   }
   50% {
-    width: 600px;
-    height: 300px;
+    opacity: 0;
+    background-color: aqua;
   }
-  100% {
-    width: 300px;
-    height: 600px;
-    background-color: gold;
-  }
-}
-@keyframes circle {
-  from {
-    background-color: limegreen;
-  }
-  to {
-    background-color: blue;
+  90% {
+    opacity: 1;
+    background-color: pink;
   }
 }/*# sourceMappingURL=style.css.map */
