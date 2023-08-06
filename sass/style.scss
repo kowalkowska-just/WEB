@@ -11,59 +11,41 @@ body {
     background-color: #333;
 }
 
-.colors {
-    height: 80vh;
-    background-image: linear-gradient(tomato, gold, royalblue, lime, royalblue, gold, tomato);
-    background-size: 800%;
+.sky {
+    position: relative;
+    height: 60vh;
+    background-color: cornflowerblue;
 
-    animation: colors 3s linear infinite;
-}
-
-@keyframes colors {
-    from {
-        background-position: 0 0;
+    .sun {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: gold;
+        box-shadow: -3px 3px 67px 20px gold;
     }
-    to {
-        background-position: 100% 0;
-    }
 }
 
-.wrapper {
-    margin: 50px;
-    text-align: center;
-    line-height: 10px;
-}
+.ground {
+    position: relative;
+    background-color: saddlebrown;
+    height: 40vh;
 
-.square {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    background-color: #fff;
-    border-radius: 2px;
-    animation: fade 1.4s infinite;
-}
-
-.square:nth-child(2n) {
-    animation: fade 1s infinite;
-}
-
-.square:nth-child(3n) {
-    animation: fade 0.5s infinite;
-}
-
-@keyframes fade {
-    10% {
-        opacity: 1;
-        background-color: pink;
+    .grass {
+        position: absolute;
+        top: 0;
+        background-color: green;
+        height: 20vh;
+        width: 100%;
     }
 
-    50% {
-        opacity: 0;
-        background-color: aqua;
-    }
-
-    90% {
-        opacity: 1;
-        background-color: pink;
+    .road {
+        position: absolute;
+        top: 13%;
+        background-color: #333;
+        height: 10vh;
+        width: 100%;
     }
 }
