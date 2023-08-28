@@ -15,17 +15,16 @@ section {
     height: 600px;
 
     display: flex;
-    align-items: stretch;
-    align-items: flex-start;
-    align-items: flex-end;
-
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-evenly;
 }
 
 .square {
     width: 20%;
-    // height: 200px;
     text-align: center;
 }
 
