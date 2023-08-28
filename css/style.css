@@ -7,28 +7,38 @@
 body {
   font-family: sans-serif;
   background-color: #333;
-}
-
-.square {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
   font-size: 50px;
-  background-color: gold;
-  border: 3px solid black;
 }
 
 section {
   display: flex;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.square {
+  width: 20%;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.one {
+  background-color: gold;
 }
 
 .two {
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  background-color: lime;
 }
 
 .three {
-  flex-direction: column-reverse;
+  background-color: royalblue;
+}
+
+.four {
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */
