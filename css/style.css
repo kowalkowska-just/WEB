@@ -22,7 +22,13 @@ body {
 
 section {
   display: flex;
-  flex-direction: row;
+}
+
+.two {
+  flex-direction: row-reverse;
   flex-wrap: wrap;
-  flex-flow: column wrap;
+}
+
+.three {
+  flex-direction: column-reverse;
 }/*# sourceMappingURL=style.css.map */
