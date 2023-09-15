@@ -1,3 +1,17 @@
-const p = document.createElement('p')
-p.textContent = 'I am a dynamically added element'
-document.body.append(p)
+// Data types
+
+// String 
+const name = 'Lisa'
+
+// Number 
+const age = 25
+
+// Boolen true/false 
+const isTrue = true
+
+// NULL and UNDEFINED
+const test = null
+let test1
+
+console.log(test)
+console.log(test1)
