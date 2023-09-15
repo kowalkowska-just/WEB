@@ -1,19 +1,28 @@
- // 
-let x = 50 
-let y = 4
+ //Comparison operators
+
+/*
+
+== we check if something is equal (the value itself)
+=== check if something is equal (value + data type)
+
+!= we check if something is different (the value itself)
+!== check if something is different (value + data type)
+
+> bigger than...
+< smaller than...
+
+>= greater than or equal to
+<= less than or equal to
+*/
 
 
-// \/ These records are the same
-x = x + y 
-console.log(x);
+const x = 8
+const y = '8'
+const z = 9
 
-x += y 
-console.log(x);
 
-// ---------------
-
-x = x - y 
-console.log(x);
-
-x -= y
-console.log(x);
+if (x === y ) {
+    console.log(`🟢`)
+} else {
+    console.log(`🔴`)
+}
