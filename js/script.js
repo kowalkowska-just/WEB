@@ -1,17 +1,27 @@
-// Data types
+// Arithmetic operators
 
-// String 
-const name = 'Lisa'
+const add = 5 + 6 
+console.log(`Addition result: ${add}`)
 
-// Number 
-const age = 25
+const substract = 5 - 6 
+console.log(`Subtraction result: ${substract}`)
 
-// Boolen true/false 
-const isTrue = true
+const multiply = 5 * 6 
+console.log(`Multiplication result: ${multiply}`)
 
-// NULL and UNDEFINED
-const test = null
-let test1
+const divide = 5 / 6 
+console.log(`Division result: ${divide}`)
 
-console.log(test)
-console.log(test1)
+const modulo = 11 % 6 
+console.log(`Modulo result: ${modulo}`)
+
+// increment
+let icrement = 1
+icrement++ 
+console.log(icrement)
+
+// decrement
+
+let decrement = 1
+decrement--
+console.log(decrement)
