@@ -1,27 +1,19 @@
-// Arithmetic operators
+ // 
+let x = 50 
+let y = 4
 
-const add = 5 + 6 
-console.log(`Addition result: ${add}`)
 
-const substract = 5 - 6 
-console.log(`Subtraction result: ${substract}`)
+// \/ These records are the same
+x = x + y 
+console.log(x);
 
-const multiply = 5 * 6 
-console.log(`Multiplication result: ${multiply}`)
+x += y 
+console.log(x);
 
-const divide = 5 / 6 
-console.log(`Division result: ${divide}`)
+// ---------------
 
-const modulo = 11 % 6 
-console.log(`Modulo result: ${modulo}`)
+x = x - y 
+console.log(x);
 
-// increment
-let icrement = 1
-icrement++ 
-console.log(icrement)
-
-// decrement
-
-let decrement = 1
-decrement--
-console.log(decrement)
+x -= y
+console.log(x);
