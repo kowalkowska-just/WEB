@@ -11,15 +11,15 @@ body {
 }
 
 section {
+  display: flex;
   margin: 20px 0;
-  height: 400px;
+  height: 300px;
   background-color: #789;
+  border: 5px solid black;
 }
 
 .square {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
+  width: 200px;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ section {
 }
 
 .two {
-  background-color: lime;
+  background-color: rgb(25, 80, 25);
 }
 
 .three {
@@ -40,22 +40,49 @@ section {
 }
 
 .first {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+}
+
+.first .two {
+  flex-grow: 1;
+}
+
+.first .four {
+  flex-grow: 1;
 }
 
 .second {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.third .one {
+  flex-grow: 1;
+  order: 4;
+}
+
+.third .two {
+  order: 3;
+}
+
+.third .four {
+  flex-grow: 3;
+  order: 2;
+}
+
+.third .three {
+  order: 1;
+}
+
+.fourth {
+  flex-direction: row-reverse;
   align-items: flex-end;
 }
 
-.third {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+.fourth .two {
+  align-self: flex-start;
+}
+
+.fourth .three {
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */
