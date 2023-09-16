@@ -1,25 +1,10 @@
-// TASK Java Script
+// IF 
+const passLength = 6
 
-let score 
-
-if ( 15 % 2 == 1) {
-    console.log(`SCORE is not even`)
+if (passLength >= 10) {
+    console.log("You have a very good password! :)");
+} else if (passLength > 5 && passLength < 10 ){
+    console.log("You have a good password.");
 } else {
-    console.log(`SCORE is even.`);
+    console.log("You have a weak password. ;/");
 }
-
-// ---------------------------------
-
-let num1 = 8 
-num1++ 
-num1++ 
-
-console.log(num1);
-
-// --------------------------------
-
-let x = 5 
-let y = 10
-
-console.log(x*=y)
-console.log(x/=y)
