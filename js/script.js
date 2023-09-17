@@ -1,26 +1,17 @@
-// Add event listener
+// PROJECT 1 
 
-const redButton = document.querySelector('#btn1')
-const blueButton = document.querySelector('.btn2')
-const removeButton = document.querySelector('.remove-color')
-const colorContainer = document.querySelector('.color')
+const button = document.querySelector('.arrow')
+const arrow = document.querySelector('.fa-arrow-down')
+const item1 = document.querySelector('.item1')
 
-function redColor() {
-    colorContainer.classList.add('red')
-    colorContainer.classList.remove('blue')
+function handleButton() {
+    item1.classList.toggle('show')
+    
+    if (item1.classList.contains('show')) {
+        arrow.style.transform = 'rotate(180deg)'
+    } else {
+        arrow.style.transform = 'rotate(0)'
+    }
 }
 
-function blueColor() {
-    colorContainer.classList.add('blue')
-    colorContainer.classList.remove('red')
-}
-
-function removeColor() {
-    colorContainer.classList.remove('blue')
-    colorContainer.classList.remove('red')
-}
-
-redButton.addEventListener('click', redColor)
-blueButton.addEventListener('click', blueColor)
-removeButton.addEventListener('click', removeColor)
-
+button.addEventListener('click', handleButton)
