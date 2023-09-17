@@ -1,9 +1,7 @@
-// Arrays
+// Loop FOR 
 
-const colors = ['red', 'green', 'blue']
+const fruits = ['🍎','🍐','🍋','🍌','🍇','🍉','🍍']
 
-console.log(colors.length);
-
-colors.push('gold')
-
-console.log(colors.length);
+for (let i = 0; i< fruits.length; i++) {
+    console.log(fruits[i]);
+}
