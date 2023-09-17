@@ -1,21 +1,13 @@
-// TASK 
+// Item download
 
-const numbers = [1, 2, 3, 4, 5, 6]
+const p = document.querySelector('p')
+console.log(p);
 
-for (i = 0; i< numbers.length; i++) {
-    console.log(numbers[i]);
-}
+const btn = document.querySelector('#btn')
+console.log(btn);
 
-function addNumbers(agr1, agr2, arg3) {
-    console.log(agr1 + agr2 * arg3);
-}
+const liItems = document.querySelectorAll('li')
+console.log(liItems);
 
-addNumbers(1,2,3)
-
-if (numbers.length > 5) {
-    console.log(`true`);
-} else {
-    console.log(`false`);
-}
-
-console.log(`Array with numbers have ${numbers.length} elements.`);
+const allP = document.querySelectorAll('p')
+console.log(allP);
