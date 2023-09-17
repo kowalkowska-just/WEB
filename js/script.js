@@ -1,19 +1,21 @@
-// Functions
+// TASK 
 
-function test() {
-    console.log('My first function in JS! 🔥');
+const numbers = [1, 2, 3, 4, 5, 6]
+
+for (i = 0; i< numbers.length; i++) {
+    console.log(numbers[i]);
 }
 
-test()
-
-function addNumbers(x, y) {
-    console.log(x + y);
+function addNumbers(agr1, agr2, arg3) {
+    console.log(agr1 + agr2 * arg3);
 }
 
-addNumbers(3, 5)
+addNumbers(1,2,3)
 
-function showName(name) {
-    console.log(`Your name is ${name}`);
+if (numbers.length > 5) {
+    console.log(`true`);
+} else {
+    console.log(`false`);
 }
 
-showName('Justyna')
+console.log(`Array with numbers have ${numbers.length} elements.`);
