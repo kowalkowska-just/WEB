@@ -1,21 +1,26 @@
 // Add event listener
 
-const btn1 = document.querySelector('#btn1')
-console.log(btn1);
+const redButton = document.querySelector('#btn1')
+const blueButton = document.querySelector('.btn2')
+const removeButton = document.querySelector('.remove-color')
+const colorContainer = document.querySelector('.color')
 
-const btn2 = document.querySelector('.btn2')
-console.log(btn2);
-
-function handleClickButton1() {
-    console.log("Button 1 clicked.");
+function redColor() {
+    colorContainer.classList.add('red')
+    colorContainer.classList.remove('blue')
 }
 
-function addNumbers() {
-    console.log(2+2);
+function blueColor() {
+    colorContainer.classList.add('blue')
+    colorContainer.classList.remove('red')
 }
 
+function removeColor() {
+    colorContainer.classList.remove('blue')
+    colorContainer.classList.remove('red')
+}
 
-//variable.addEventListener('event', 'function')
-btn1.addEventListener('click',handleClickButton1)
+redButton.addEventListener('click', redColor)
+blueButton.addEventListener('click', blueColor)
+removeButton.addEventListener('click', removeColor)
 
-btn2.addEventListener('click', addNumbers)
