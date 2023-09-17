@@ -1,13 +1,21 @@
-// Item download
+// Add event listener
 
-const p = document.querySelector('p')
-console.log(p);
+const btn1 = document.querySelector('#btn1')
+console.log(btn1);
 
-const btn = document.querySelector('#btn')
-console.log(btn);
+const btn2 = document.querySelector('.btn2')
+console.log(btn2);
 
-const liItems = document.querySelectorAll('li')
-console.log(liItems);
+function handleClickButton1() {
+    console.log("Button 1 clicked.");
+}
 
-const allP = document.querySelectorAll('p')
-console.log(allP);
+function addNumbers() {
+    console.log(2+2);
+}
+
+
+//variable.addEventListener('event', 'function')
+btn1.addEventListener('click',handleClickButton1)
+
+btn2.addEventListener('click', addNumbers)
