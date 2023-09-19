@@ -12,11 +12,9 @@ body {
   color: #fff;
 }
 
-.container {
-  margin-top: 300px;
-  text-align: center;
-}
-
-[class*='col'] {
-  border: 2px solid lime
+div {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 8px;
 }
